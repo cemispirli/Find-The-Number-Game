@@ -40,6 +40,7 @@ check.addEventListener("click", (e) => {
     }
     else {
         info.innerHTML = "Unfortunately you lost";
+        attemps.innerHTML = `Number :${randomNumber} <br> Number of attempts: ${counter}`;
         check.style.display = "none";
         input.style.display = "none";
         info.style.color = "crimson"
