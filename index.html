@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Number Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./spectrum-gradient.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 60px;
+            font-size: 35px;
+        }
+
+        img {
+            margin: 50px;
+            width: 300px;
+            height: 270px;
+        }
+
+        main {
+            position: relative;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        input {
+            width: 200px;
+            height: 28px;
+            border-radius: 5px;
+        }
+        button {
+            height: 28px;
+            margin-left: 15px;
+            width: 70px;
+            border-radius: 5px;
+            background-color: blue;
+            color: azure;
+            font-weight: 700;
+            font-size: 15px;
+        }
+        .info {
+            font-size: 30px;
+            margin: 20px;
+            margin-top: 0;
+        }
+        .attemps {
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guess The Number (1 - 100 )</h1>
+    </header>
+    <main>
+        <div class="input">
+            <input type="number" name="number" id="number" min="0" max="101">
+            <button class="check" type="submit">Check</button>
+        </div>
+        <div>
+            <img src="./pngwing.com.png" alt="">
+        </div>
+        <div>
+            <p class="info">Write the number...</p>
+        </div>
+        <div>
+            <p class="attemps"></p>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
