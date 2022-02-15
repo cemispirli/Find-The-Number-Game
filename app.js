@@ -25,9 +25,12 @@ check.addEventListener("click", (e) => {
     console.log(number);
     
     
-    if (number == randomNumber && counter > 0) {
+    if (number == randomNumber && counter >= 0) {
         info.innerHTML = "Congratulations you found the number :)";
-         
+        check.style.display = "none";
+        input.style.display = "none"; 
+        info.style.fontSize = "40px"
+        
          
     }
     else if (number > randomNumber && counter > 0) {
