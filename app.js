@@ -11,15 +11,21 @@ check.addEventListener("click", () => {
 
 });
 
-
-
 let randomNumber = Math.round(Math.random() * 100);
 console.log(randomNumber);
 
 input.addEventListener("click", () => {
     input.value = "";
 });
-
+input.addEventListener("keyup", (event) => {
+    if (event.keyCode === 13) {
+        
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.querySelector(".check").click();
+      }
+});
 check.addEventListener("click", (e) => {
     let number = input.value;
     console.log(number);
