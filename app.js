@@ -2,6 +2,9 @@ let input = document.getElementById("number");
 let check = document.querySelector(".check");
 let info = document.querySelector(".info");
 let attemps = document.querySelector(".attemps");
+let downNum = document.querySelector(".downNum");
+let upNum = document.querySelector(".upNum");
+// console.log(upNum.innerHTML);
 let counter = 9;
 // console.log(attemps);
 
@@ -39,12 +42,15 @@ check.addEventListener("click", (e) => {
         
          
     }
+    
     else if (number > randomNumber && counter > 0) {
         info.innerHTML = "Enter a smaller number.."
+        upNum.innerHTML = input.value
         
     }
     else if (number < randomNumber && counter > 0) {
         info.innerHTML = "Enter a larger number..";
+        downNum.innerHTML = input.value
         
     }
     else {
